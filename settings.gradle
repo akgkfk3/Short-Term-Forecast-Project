@@ -1,0 +1,14 @@
+rootProject.name = 'multi-module'
+
+// Application Layer
+include 'modules:application:sync-application'
+include 'modules:application:inquire-application'
+
+// Common layer
+
+// Domain Layer
+include 'modules:domain:weather-domain'
+
+// External Layer
+
+// Internal Layer

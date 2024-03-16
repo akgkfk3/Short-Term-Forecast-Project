@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: weather Project
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bigs?characterEncoding=UTF-8
+    username: root
+    password: root
+
+    hikari:
+      auto-commit: true
+      minimum-idle: 40
+      maximum-pool-size: 100
+      transaction-isolation: TRANSACTION_READ_COMMITTED
+      pool-name: bigs
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        default_batch_fetch_size: 50
+        #show_sql: true
+        format_sql: true
+        use_sql_comments: true
+
+logging.level:
+  org.hibernate.SQL: debug
+  #org.hibernate.type: trace
