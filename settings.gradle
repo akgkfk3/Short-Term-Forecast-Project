@@ -4,11 +4,8 @@ rootProject.name = 'multi-module'
 include 'modules:application:sync-application'
 include 'modules:application:inquire-application'
 
-// Common layer
-
 // Domain Layer
 include 'modules:domain:weather-domain'
 
-// External Layer
-
 // Internal Layer
+include 'modules:internal:weather-api'
