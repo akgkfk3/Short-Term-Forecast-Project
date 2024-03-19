@@ -32,7 +32,7 @@ public class ForecastApi {
     }
 
     // Service Key --> 추후, yml 파일에서 주입받는 것으로 변경 예정
-    private static final String AUTH_KEY = "RY9E2vrpNXKUTOBCbF6RWpVdwCjg4aIW7Ye89BwAp9CXUxPoU4NHLnLxMnfo7RvQJknP%2B1BkWbFwk2BcJGcoeg%3D%3D";
+    private static final String AUTH_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
     /**
      * 단기 예보 조회 API
