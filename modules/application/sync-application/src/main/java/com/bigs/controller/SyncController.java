@@ -32,7 +32,7 @@ public class SyncController {
         syncService.sync(weatherApiRequestDto);
 
         ResponseDto<String> responseDto =
-                new ResponseDto<>(HttpStatus.NO_CONTENT.value(), null, "데이터 Sync 성공");
+                new ResponseDto<>(HttpStatus.OK.value(), null, "데이터 Sync 성공");
 
         return new ResponseEntity<>(responseDto, HttpStatus.OK);
     }
