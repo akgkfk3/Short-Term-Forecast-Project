@@ -37,17 +37,19 @@
 
 ## 🔍 기능 구현
 
-- 단기 예보를 DB에 저장하게 하는 API
+- 단기 예보를 DB에 저장하게 하는 API [[API 명세서]](https://documenter.getpostman.com/view/28283234/2sA2xpUA8P#9fb58596-3061-4706-84a1-0a8ec5e71ff9)
      
   - POST 요청 시, 공공 데이터 포털의 API를 호출하여 DB에 적재 📌 [[서비스]](https://github.com/akgkfk3/Short-Term-Forecast-Project/blob/main/modules/application/sync-application/src/main/java/com/bigs/service/SyncServiceImpl.java#L38) [[단기 예보 API]](https://github.com/akgkfk3/Short-Term-Forecast-Project/blob/main/modules/internal/weather-api/src/main/java/com/bigs/api/ForecastApi.java#L45)
 
-- 단기 예보를 조회하는 API
+- 단기 예보를 조회하는 API [[API 명세서]](https://documenter.getpostman.com/view/28283234/2sA2xpUA8P#3316a2bd-d15e-4e39-8968-09c4fc77d1f8)
 
   - GET 요청 시, DB에 저장된 데이터를 조회 📌 [[서비스]](https://github.com/akgkfk3/Short-Term-Forecast-Project/blob/main/modules/application/inquire-application/src/main/java/com/bigs/service/InquireServiceImpl.java#L28)
  
   - 데이터가 없을 경우, Http Status 204 오류를 응답 📌 [[컨트롤러]](https://github.com/akgkfk3/Short-Term-Forecast-Project/blob/main/modules/application/inquire-application/src/main/java/com/bigs/controller/InquireController.java#L36)
 
 <br/>
+
+
 
 ## 🌟 트러블 슈팅
 
