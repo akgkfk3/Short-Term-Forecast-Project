@@ -9,7 +9,6 @@ bootJar {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-//    api project(":modules:domain:weather-domain")
     implementation project(":modules:domain:weather-domain")
-
+    implementation project(":modules:internal:weather-api")
 }
